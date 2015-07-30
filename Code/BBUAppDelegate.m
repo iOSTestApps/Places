@@ -10,6 +10,7 @@
 
 #import "BBUAppDelegate.h"
 #import "BBUPlacesViewController.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 static NSString* const BBUMovesClientId     = @"MyMovesClientId";
 static NSString* const BBUMovesClientSecret = @"MyMovesClientSecret";
@@ -19,6 +20,8 @@ static NSString* const BBUMovesURLScheme    = @"my://movesUrlScheme";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [BuddyBuildSDK setup];
+    
     [[MovesAPI sharedInstance] setShareMovesOauthClientId:BBUMovesClientId
                                         oauthClientSecret:BBUMovesClientSecret
                                         callbackUrlScheme:BBUMovesURLScheme];

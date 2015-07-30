@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20F15D6022174B52B4520CED /* libPods-Places.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D376BD0E15CC4510BD225856 /* libPods-Places.a */; };
+		61AB573DAF3EE5FAF9F17FB8 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178F12DC1FFF783438B9955F /* BuddyBuildSDK.framework */; };
 		86FB841C18E4D680008A41BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FB841B18E4D680008A41BA /* Foundation.framework */; };
 		86FB841E18E4D680008A41BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FB841D18E4D680008A41BA /* CoreGraphics.framework */; };
 		86FB842018E4D680008A41BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FB841F18E4D680008A41BA /* UIKit.framework */; };
@@ -16,10 +17,15 @@
 		86FB842E18E4D680008A41BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FB842D18E4D680008A41BA /* Images.xcassets */; };
 		86FB844D18E4DBA5008A41BA /* BBUPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB844C18E4DBA5008A41BA /* BBUPlacesViewController.m */; };
 		86FB845018E4E2D9008A41BA /* BBUPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB844F18E4E2D9008A41BA /* BBUPlace.m */; };
+		CB988D090406C0C8BF32C60A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4204B0AFDBA0C1399B055C /* CoreText.framework */; };
+		E64D1F0599C131CE1EDAA032 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B560D49EEC5F208E44D0D /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B6EE380F972459891CECE5C /* Pods-Places.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.xcconfig"; path = "Pods/Pods-Places.xcconfig"; sourceTree = "<group>"; };
+		178F12DC1FFF783438B9955F /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		1B4204B0AFDBA0C1399B055C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5E9B560D49EEC5F208E44D0D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		86FB841818E4D680008A41BA /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FB841B18E4D680008A41BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86FB841D18E4D680008A41BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,6 +52,9 @@
 				86FB842018E4D680008A41BA /* UIKit.framework in Frameworks */,
 				86FB841C18E4D680008A41BA /* Foundation.framework in Frameworks */,
 				20F15D6022174B52B4520CED /* libPods-Places.a in Frameworks */,
+				61AB573DAF3EE5FAF9F17FB8 /* BuddyBuildSDK.framework in Frameworks */,
+				E64D1F0599C131CE1EDAA032 /* AssetsLibrary.framework in Frameworks */,
+				CB988D090406C0C8BF32C60A /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,9 @@
 				86FB841B18E4D680008A41BA /* Foundation.framework */,
 				86FB841F18E4D680008A41BA /* UIKit.framework */,
 				D376BD0E15CC4510BD225856 /* libPods-Places.a */,
+				178F12DC1FFF783438B9955F /* BuddyBuildSDK.framework */,
+				5E9B560D49EEC5F208E44D0D /* AssetsLibrary.framework */,
+				1B4204B0AFDBA0C1399B055C /* CoreText.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,6 +313,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting_Files/Places-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting_Files/Places-Info.plist";
@@ -315,6 +331,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting_Files/Places-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting_Files/Places-Info.plist";
