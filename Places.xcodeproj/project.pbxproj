@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B6EE380F972459891CECE5C /* Pods-Places.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.xcconfig"; path = "Pods/Pods-Places.xcconfig"; sourceTree = "<group>"; };
+		0F45EAEB9A8404A49F62422E /* Pods-Places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.release.xcconfig"; path = "Pods/Target Support Files/Pods-Places/Pods-Places.release.xcconfig"; sourceTree = "<group>"; };
 		86FB841818E4D680008A41BA /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FB841B18E4D680008A41BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86FB841D18E4D680008A41BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -35,6 +35,7 @@
 		86FB844E18E4E2D9008A41BA /* BBUPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUPlace.h; sourceTree = "<group>"; };
 		86FB844F18E4E2D9008A41BA /* BBUPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUPlace.m; sourceTree = "<group>"; };
 		D376BD0E15CC4510BD225856 /* libPods-Places.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Places.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D39618711801F6185055FF /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Places/Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		780DE57313049E5F5342F97A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1D39618711801F6185055FF /* Pods-Places.debug.xcconfig */,
+				0F45EAEB9A8404A49F62422E /* Pods-Places.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		86FB840F18E4D680008A41BA = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +70,7 @@
 				86FB841918E4D680008A41BA /* Products */,
 				86FB844A18E4D6D3008A41BA /* Resources */,
 				86FB842218E4D680008A41BA /* Supporting Files */,
-				0B6EE380F972459891CECE5C /* Pods-Places.xcconfig */,
+				780DE57313049E5F5342F97A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +156,11 @@
 				CLASSPREFIX = BBU;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Boris Bügling";
+				TargetAttributes = {
+					86FB841718E4D680008A41BA = {
+						DevelopmentTeam = L4FET847JL;
+					};
+				};
 			};
 			buildConfigurationList = 86FB841318E4D680008A41BA /* Build configuration list for PBXProject "Places" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -188,7 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Places-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Places/Pods-Places-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		88ED3A2A3BB347A893B16888 /* Check Pods Manifest.lock */ = {
@@ -297,10 +312,11 @@
 		};
 		86FB844518E4D680008A41BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B6EE380F972459891CECE5C /* Pods-Places.xcconfig */;
+			baseConfigurationReference = E1D39618711801F6185055FF /* Pods-Places.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting_Files/Places-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting_Files/Places-Info.plist";
@@ -311,10 +327,11 @@
 		};
 		86FB844618E4D680008A41BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B6EE380F972459891CECE5C /* Pods-Places.xcconfig */;
+			baseConfigurationReference = 0F45EAEB9A8404A49F62422E /* Pods-Places.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting_Files/Places-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting_Files/Places-Info.plist";
