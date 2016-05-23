@@ -158,7 +158,7 @@
 				ORGANIZATIONNAME = "Boris Bügling";
 				TargetAttributes = {
 					86FB841718E4D680008A41BA = {
-						DevelopmentTeam = L4FET847JL;
+						DevelopmentTeam = XYL49Z8YJS;
 					};
 				};
 			};
@@ -316,12 +316,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting_Files/Places-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting_Files/Places-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "43953b8a-2990-438c-8de8-481590bf2843";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -332,12 +332,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting_Files/Places-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting_Files/Places-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "43953b8a-2990-438c-8de8-481590bf2843";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
